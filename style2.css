@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+@font-face {
+    font-family: 'Custom-Font';
+    src: url('Beatstreet-Font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+
+.left-side {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    width: 600px;
+    height: 100vh;
+    background-image: url('render.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.right-side {
+    padding-left: 610px;
+}
+
+.logo-banner {
+    position: absolute;
+    left: 0;
+    width: 600px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    gap: 10px;
+    margin-top: 20vh;
+}
+
+.logo {
+    padding-left: 3.5vw;
+    height: 120px;
+    width: auto;
+}
+
+h1 {
+    padding-top: 3vh;
+    font-size: calc(4vw + 30px);
+    color:white;
+    font-family: 'Custom-Font', Impact;
+}
+
+.credits {
+    font-size: calc(.25vw + 10px);
+    color:whitesmoke;
+    text-align: center;
+    margin-top: auto;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    padding-bottom: 1vh;
+}
+
+.credits a {
+    color: whitesmoke;
+}
+
+.credits a:hover {
+    text-shadow: none;
+    text-decoration: underline;
+}
